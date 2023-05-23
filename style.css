@@ -1,0 +1,467 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+@font-face {
+    font-family: 'Mario';
+    src: url(fonts/RetroMario-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Jersey';
+    src: url(fonts/Jersey\ Sharp.ttf);
+}
+@font-face {
+    font-family: 'Sharpin';
+    src: url(fonts/SHARPIN.otf);
+}
+
+@font-face {
+    font-family: 'SharpGf';
+    src: url(fonts/SharpsGF.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+/*pocetak header*/
+
+header{
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid #000000;
+    background-image: url(slike/pozadina2.jpg);
+
+}
+
+#logo,#navigacija{
+    flex-grow: 1;
+}
+
+#navigacija{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navigacija{
+    opacity: 0;
+    justify-content: center;
+    align-items: center;
+    width: 99.9%;
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid #000000;
+    background-image: url(slike/pozadina2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.navigacija a{
+    border-radius: 10px;
+    color: white;
+    margin-right: 25px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#logo{
+    display: flex;
+    align-items: center;
+
+}
+/*
+.hamburgermenu{
+    top: 5vh;
+    right: 5vw;
+    position: absolute;
+}
+*/
+.bar1{
+    display: none;
+    height:5px ;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.bar2{
+    display: none;
+    height:5px ;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.bar3{
+    display: none;
+    height:5px ;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bar2{
+    margin-top: 5px;
+}
+.bar3{
+    margin-top: 5px;
+}
+
+#toggler{
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    z-index: 99;
+    right: 0px;
+    position: absolute;
+}
+
+#logo h1{
+    font-size: 40px;
+    font-family: 'SharpGf';
+    font-weight: 400;
+    margin-left: 25px;
+}
+
+
+
+#navigacija  a{
+    border-radius: 10px;
+    color: white;
+    margin-right: 25px;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    transition: all 0.5s ease-in-out;
+}
+
+#navigacija  a:hover{
+    box-shadow: inset 0 0 0 35px white;
+    color: black;
+    border-radius:25px ;
+}
+
+.navigacija  a:hover{
+    box-shadow: inset 0 0 0 35px white;
+    color: black;
+    border-radius:25px ;
+}
+
+#back{
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
+}
+
+#back a{
+    font-weight: 600;
+    z-index: 99;
+    border-radius: 50%;
+    padding: 20px 13px 20px 13px;
+    background-color:rgba(255, 255, 255, 0) ;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 2px solid white;
+    bottom: 5vh;
+    right: 3vw;
+}
+
+
+/*kraj header*/
+
+/*pocetak page1*/
+
+#page1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url(slike/pozadina2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+#Text{
+
+    padding-left: 120px;
+}
+
+
+
+#Text p{
+    font-family: 'Poppins', sans-serif;
+    width: 60%;
+    font-size: 2.5rem;
+    color: rgb(255, 255, 255);
+    letter-spacing: 3px;
+}
+
+
+/*kraj page1*/
+
+
+/*pocetak page2*/
+
+
+#page2{
+    border: 1px solid rgb(0, 0, 0);
+    height: 60vh;
+    background: url(slike/pozadina3.jpg);
+}
+
+#divque{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#naslov{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.questions{
+    border-radius: 20px;
+    height: 30vh;
+    width: 25vw;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 0 29px;
+    background-color: rgba(2, 0, 0, 0.401);
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.076),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.096),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.106),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.108),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.102),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.questions p {
+    font-size: 1.2rem;
+}
+
+.questions h3{
+    font-size: 1.5rem;
+}
+
+
+.questions:hover{
+    scale: 1.2;
+    transition: all 0.3s ease-in-out;
+
+}
+
+/*page3*/
+
+#page3{ 
+    align-items:    center ;
+    display: flex;
+    height: 100vh;
+    background: url(slike/pozadina5.jpg);
+    background-attachment: fixed;
+    background-size:cover ;
+}
+
+
+/*forma*/
+
+    .container {    
+      height: 60vh;
+      width: 520px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #0303033e;
+      border-radius: 5px;
+      border: 2px solid black;
+      box-shadow:
+      2.8px 2.8px 2.2px rgba(0, 0, 0, 0.076),
+      6.7px 6.7px 5.3px rgba(0, 0, 0, 0.096),
+      12.5px 12.5px 10px rgba(0, 0, 0, 0.106),
+      22.3px 22.3px 17.9px rgba(0, 0, 0, 0.108),
+      41.8px 41.8px 33.4px rgba(0, 0, 0, 0.102),
+      100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+    
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      font-weight: bold;
+      color: rgb(255, 255, 255);
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    input[type=text], input[type=email], textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      resize: vertical;
+    }
+    
+    textarea {
+      max-height: 150px;
+    }
+    
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .container h2{
+        color: rgb(249, 248, 245);
+    }
+    
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+
+/* burgermenu*/
+
+#toggler:checked ~ .bar1{
+    transform: rotate(45deg);
+    transition: all 0.3s;
+}
+
+#toggler:checked ~.bar2{
+    transform: rotate(-45deg);
+    margin-top:-5px;
+    transition: all 0.3s;
+}
+
+
+#toggler:checked ~.bar3{
+    display: none;
+}
+
+
+#toggler:checked ~ .row{
+    opacity: 1;
+}
+
+
+/* responsive */
+
+
+@media (max-width: 1447px) {
+    #divque {
+        flex-direction:column;
+        height: 140vh;
+        }
+
+    .questions{
+        width: 80vw;
+        border: 1px solid rgb(0, 0, 0);
+    }
+
+    .questions:not(:nth-child(1)){
+        margin-top: 100px;
+    }
+
+    #page2{
+        height: 160vh;
+    }
+
+    #Text p{
+        font-size: 2rem;
+        width: 80%;
+    }
+}
+
+@media (max-width: 688px){
+    #Text{
+        padding-left:0;
+    }
+    
+    #navigacija a{
+        display: none;
+    }
+
+   /* .bar1{
+        display: grid;
+    }
+    .bar2{
+        display: grid;
+    }
+    .bar3{
+        display: grid;
+    } */
+
+    #navigacija {
+        position: absolute;
+    }
+
+    #logo{
+        flex: 9;
+        width: 100%;
+        text-align: center;
+            justify-content: center;
+    }
+
+    header{
+        border: 0;
+    }
+
+    .navigacija{
+        position: relative;
+        opacity: 1;
+    }
+
+    .navigacija a{
+        margin-right: 5px;
+    }
+}
+@media (max-width: 579px){
+    #Text p{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 495px){
+    #Text p{
+        font-size: 1.6rem;
+    }
+}
+
+
+@media (max-width: 407px){
+    #Text p{
+        font-size: 1.3rem;
+    }
+
+    .questions{
+        height: 40vh;
+    }
+}
